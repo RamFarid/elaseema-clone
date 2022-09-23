@@ -1,0 +1,10 @@
+main {
+  overflow: hidden;
+  .main-page {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 30px;
+  }
+  @import './home';
+  @import './aside';
+}

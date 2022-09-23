@@ -1,0 +1,25 @@
+aside {
+  margin-right: 30px;
+  // Each Shortcut
+  section {
+    border: 1px solid #eee;
+    color: $black_color;
+    width: 100%;
+    margin-bottom: 30px;
+    h3 {
+      background-color: $black_color;
+      color: $white_color;
+      width: 100%;
+      padding: 12px 17px;
+      font-size: 24px;
+      border-left: 16px solid red;
+    }
+    .wrapper {
+      max-height: 470px;
+      overflow-y: scroll;
+    }
+    @import './currency';
+    @import './opinions';
+    @import './most-view';
+  }
+}

@@ -1,0 +1,20 @@
+.most-veiw {
+  margin: 0 10px;
+  padding: 10px;
+  transition: all $transition_duration ease-in-out;
+  border: {
+    top: 1px solid #eee;
+    bottom: 1px solid #eee;
+  }
+  &:hover {
+    box-shadow: 0 2px 10px 0 #f1f1f1;
+  }
+  a {
+    transition: all $transition_duration ease-in;
+    color: $markup_color;
+
+    &:hover {
+      color: #007bff;
+    }
+  }
+}

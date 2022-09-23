@@ -1,0 +1,26 @@
+figure {
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+  img {
+    max-height: 45px;
+    max-width: 45px;
+  }
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    .title {
+      a {
+        color: $markup_color;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+    .say {
+      font-weight: 700;
+      font-size: 13px;
+    }
+  }
+}

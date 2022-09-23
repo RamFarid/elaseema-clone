@@ -1,0 +1,31 @@
+.news-header-wrapper {
+  background-color: #f8f8f8;
+  height: 60px;
+  @extend %center-flexbox;
+  .news-header {
+    @extend %center-flexbox;
+    color: $black_color;
+    direction: ltr;
+    > span {
+      background-color: $markup_color;
+      color: $white_color;
+      font-weight: 900;
+      padding: 4px 10px;
+      width: 100px;
+      margin: 0 15px;
+    }
+
+    a {
+      @extend %center-flexbox;
+      gap: 2px;
+      margin: 0 5px;
+      line-height: 50px;
+      transition: color $transition_duration;
+      direction: rtl;
+      color: #333;
+      &:hover {
+        color: $markup_color;
+      }
+    }
+  }
+}

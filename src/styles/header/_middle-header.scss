@@ -1,0 +1,29 @@
+.middle-header-wrapper {
+  background-color: $white_color;
+  color: $black_color;
+  .middle-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 60px;
+    padding: $header_top_padding 0;
+    .signatures {
+      font-weight: 700;
+      .signature-item {
+        text-align: center;
+        font-size: 18px;
+        .job {
+          color: #666;
+        }
+        &:last-child {
+          margin: 8px 0 0 0;
+        }
+      }
+    }
+  }
+  .logo {
+    img {
+      max-width: 250px;
+    }
+  }
+}

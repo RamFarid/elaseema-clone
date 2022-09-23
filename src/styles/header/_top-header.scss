@@ -1,0 +1,92 @@
+.top-header-wrapper {
+  $color: #cfcfcf;
+  background-color: $black_color;
+  color: $color;
+  .top-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 42px;
+    .date {
+      background-color: $markup_color;
+      width: fit-content;
+      display: inline-block;
+      color: #fff;
+      padding: 10px 15px;
+    }
+
+    a.contact-links-item {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 10px;
+      font-size: 14px;
+      gap: 5px;
+      &:last-child {
+        font-weight: 700;
+      }
+    }
+    button {
+      background: transparent;
+      color: #fff;
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 8px;
+      font-size: 17px;
+      font-weight: 900;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      padding: 4px 11px;
+    }
+    .drop-down-search {
+      transition: all $transition_duration ease-out;
+      position: absolute;
+      top: 42px;
+
+      left: 0;
+      width: 100%;
+      background-color: $gray_color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      height: 0;
+      z-index: 99;
+      &.active {
+        height: 120px;
+      }
+      .input-co {
+        width: 87%;
+        border: 1px solid $white_color;
+        position: relative;
+        height: 57%;
+        input {
+          outline: none;
+          border: none;
+          width: 100%;
+          background: transparent;
+          height: 100%;
+          color: $white_color;
+          padding: 0 24px 0 13%;
+          font-size: 20px;
+        }
+        button {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 12%;
+          height: 100%;
+          background-color: $markup_color;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          font-size: 26px;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}

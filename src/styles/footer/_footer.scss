@@ -1,0 +1,21 @@
+.footer-wrapper {
+  background-color: $black_color;
+  color: #eee;
+  margin-top: 50px;
+  footer {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .producer {
+      text-transform: capitalize;
+      a {
+        color: orange;
+        font-weight: 900;
+      }
+    }
+    .copyrights {
+      font-weight: 900;
+    }
+  }
+}

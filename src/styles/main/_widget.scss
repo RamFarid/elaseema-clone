@@ -1,0 +1,12 @@
+section.widget-parent:nth-child(2) {
+  @include widget('dark');
+}
+section.widget-parent:nth-child(3) {
+  @include widget('light');
+}
+section.widget-parent:nth-child(4) {
+  @include widget('dark');
+}
+section.widget-parent:nth-child(5) {
+  @include widget('gray');
+}

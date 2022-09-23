@@ -1,0 +1,8 @@
+header {
+  height: fit-content;
+  width: 100%;
+  @import './top-header.scss';
+  @import './middle-header.scss';
+  @import './nav.scss';
+  @import './news-header';
+}
