@@ -13,7 +13,13 @@ function NewsHeader() {
           gradient={false}
         >
           {someData.map((data) => {
-            return <MarqueeItems text={data.title} link={data.link} />
+            return (
+              <MarqueeItems
+                text={data.title}
+                link={data.link}
+                key={data.id + 6}
+              />
+            )
           })}
         </Marquee>
         <span>أخر الاخبار</span>

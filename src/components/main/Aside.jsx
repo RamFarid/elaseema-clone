@@ -10,26 +10,31 @@ function Aside() {
   return (
     <aside>
       <Shortcuts header='أسعار العملات'>
-        {currencies.map((currency) => {
+        {currencies.map((currency, id) => {
           return (
-            <Currency theValue={currency.value} currency={currency.currency} />
+            <Currency
+              theValue={currency.value}
+              currency={currency.currency}
+              key={id + 8}
+            />
           )
         })}
       </Shortcuts>
       <Shortcuts header='مقالات الرأي'>
-        {opinions.map((opinion) => {
+        {opinions.map((opinion, id) => {
           return (
             <Opinion
               img={opinion.img}
               say={opinion.say}
               title={opinion.title}
+              key={id + 4}
             />
           )
         })}
       </Shortcuts>
       <Shortcuts header='الأخبار الأكثر مشاهده'>
-        {mostVeiw.map((data) => {
-          return <MostVeiw link={data.link} title={data.title} />
+        {mostVeiw.map((data, id) => {
+          return <MostVeiw link={data.link} title={data.title} key={id + 10} />
         })}
       </Shortcuts>
     </aside>
